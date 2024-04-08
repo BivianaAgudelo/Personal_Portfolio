@@ -6,3 +6,12 @@
     letter-spacing:  0.1em;
     word-spacing: 0.1em;
   }
+
+  .img__background {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 200vh;
+  }
+  
+  

@@ -14,8 +14,10 @@ body {
   background-color: #f8f8f2;
 }
 
+/* CABECERA */
+
 .title {
-  color: black;
+  color: #000000;
   background-color: var(--color-amarillo-claro);
   text-align: center;
   font-family: "Butterfly Kids", cursive;
@@ -41,16 +43,42 @@ body {
   top: -130px;
   margin: 10px auto;
   display: block;
+  opacity: 1; /* Opacidad inicial */
+  transition: opacity 1s ease;
 }
+
 
 .img__text {
   text-align: center;
-  font-family: "Oswald", sans-serif;
-  color: rgb(3, 3, 3);
+  font-family: "Butterfly Kids", cursive;
+  color: #000000;
   margin-top: -140px;
   padding-bottom: 5px;
+  font-size: 45px;
+  line-height: 2em;
+}
+
+.img__text p {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .icon__group {
   text-align: center;
+  color: #55735c;
+ padding-bottom: 20px;
+  font-size: 250%;
+  animation: brillo 8s infinite;
+}
+
+@keyframes brillo {
+  0% {
+    opacity: 1; /* inicio del brillo: opacidad completa */
+  }
+  50% {
+    opacity: 0.5; /* mitad del brillo: opacidad reducida */
+  }
+  100% {
+    opacity: 1; /* final del brillo: opacidad completa */
+  }
 }
