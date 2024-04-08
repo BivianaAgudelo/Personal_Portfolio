@@ -1,0 +1,56 @@
+/* Definición de variables de colores */
+:root {
+  --color-verde-claro: #e1f0da; /* Verde claro */
+  --color-verde-pastel: #d4e7c5; /* Verde pastel */
+  --color-verde-mas-oscuro: #bfd8af; /* Verde más oscuro */
+  --color-verde-oscuro: #99bc85; /* Verde oscuro */
+  --color-amarillo-claro: #f1f5a8; /* Amarillo claro */
+  --color-amarillo: #e5e483; /* Amarillo */
+  --color-amarillo-mas-oscuro: #d2d180; /* Amarillo más oscuro */
+  --color-amarillo-oscuro: #b2b377; /* Amarillo oscuro */
+}
+
+body {
+  background-color: #f8f8f2;
+}
+
+.title {
+  color: black;
+  background-color: var(--color-amarillo-claro);
+  text-align: center;
+  font-family: "Butterfly Kids", cursive;
+  font-size: 50px;
+}
+
+.img__background {
+  background-image: url("../img/fondoPantalla1.jpg");
+  height: 900px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.img__div {
+  background-color: var(--color-amarillo-claro);
+}
+
+.imagen__oruga {
+  height: 250px;
+  position: relative;
+  top: -130px;
+  margin: 10px auto;
+  display: block;
+}
+
+.img__text {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: rgb(3, 3, 3);
+  margin-top: -140px;
+  padding-bottom: 5px;
+}
+
+.icon__group {
+  text-align: center;
+}
