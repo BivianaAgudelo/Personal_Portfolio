@@ -62,26 +62,68 @@
 
     <!-- INICIO FORMULARIO -->
 
-    <h2>Formulario de contacto</h2>
-    <p>╰(*°▽°*)╯ Hola amig@s aventureros del teclado! 🚀</p>
-    <p>🚀 ¿Listo para conectar? Completa el formulario <br> y Únase a la lista de correo o sígueme en las redes sociales </p>
-    <p>¡Hasta pronto en mi bandeja de entrada! <br>
-        ¡Abrazos digitales! 🤗📨</p>
-    <form action="procesar_formulario.php" method="POST">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+    <div class="formulario__container">
+      <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+      </div>
+      <div class="mensajes__container">
+        <h2>Formulario de contacto</h2>
+        <p>╰(*°▽°*)╯ Hola amig@s aventureros del teclado! 🚀</p>
+        <p>🌈🚀 ¿List@ para conectar? Completa el formulario <br> y Únase a la lista de correo o sígueme en las redes sociales. </p>
+        <p>¡Hasta pronto en mi bandeja de entrada! <br>
+            ¡Abrazos digitales! 🤗📨</p>
+      </div>
+      
+      <form>
+        <div class="container-form">
+            <div class="input-group">
+                <span class="input-item">
+                  <i class="fa-solid fa-user-secret"></i>
+                </span>
+                <input class="form-input" type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre"><br><br>
+            </div>
         
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="asunto">Asunto:</label><br>
-        <input type="text" id="asunto" name="asunto" required><br><br>
+            <div class="input-group">
+              <span class="input-item">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+                <input class="form-input" type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico"><br><br>
+            </div>
         
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+            <div class="input-group">
+              <span class="input-item">
+                <i class="fa-solid fa-paperclip"></i>
+              </span>
+                <input class="form-input" type="text" id="asunto" name="asunto" required placeholder="Ingresa el asunto"><br><br>
+            </div>
         
-        <input type="submit" value="Enviar">
+            <div class="input-group">
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Ingresa tu mensaje"></textarea><br><br>
+            </div>
+        
+            <button class="btn submits sign-up">
+              Enviar
+              <!--         Sign Up font icon -->
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+        
     </form>
+      
+    </div>
+
+    
+    
+    
     
     <footer class="footer__container">
       <img src="./img/8-removebg-preview.png" alt="">

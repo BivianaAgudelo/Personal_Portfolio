@@ -1,3 +1,5 @@
+/* CABECERA */
+
 .title {
   display: flex;
   justify-content: center;
@@ -13,6 +15,18 @@
   align-items: center;
   height: 200vh;
 }
+
+/* FORMULARIO */
+
+.formulario__container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  flex-direction: row;
+  gap: 200px;
+}
+
+
 
 /* FOOTER */
 
