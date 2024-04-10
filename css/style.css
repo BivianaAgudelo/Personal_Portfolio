@@ -47,7 +47,6 @@ body {
   transition: opacity 1s ease;
 }
 
-
 .img__text {
   text-align: center;
   font-family: "Butterfly Kids", cursive;
@@ -66,7 +65,7 @@ body {
 .icon__group {
   text-align: center;
   color: #55735c;
- padding-bottom: 20px;
+  padding-bottom: 20px;
   font-size: 250%;
   animation: brillo 8s infinite;
 }
@@ -81,4 +80,31 @@ body {
   100% {
     opacity: 1; /* final del brillo: opacidad completa */
   }
+}
+
+/* INICIO FORMULARIO */
+
+/* FOOTER */
+
+.footer__container {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-verde-claro),
+    var(--color-verde-pastel),
+    var(--color-verde-mas-oscuro),
+    var(--color-verde-oscuro)
+  );
+  padding: 20px;
+  color: #000000;
+  font-family: "Butterfly Kids", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  height: 600px;
+  line-height: 2em;
+}
+
+.footer__container img {
+  border-radius: 50%;
+  width: 300px; /* Ancho de la imagen */
+  height: auto;
 }

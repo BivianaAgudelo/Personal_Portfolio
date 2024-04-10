@@ -8,6 +8,9 @@
       src="https://kit.fontawesome.com/9c32a25bcb.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Caveat:wght@400..700&family=Just+Another+Hand&family=Marck+Script&display=swap"
       rel="stylesheet"
@@ -56,6 +59,35 @@
     <aside>
         
     </aside>
+
+    <!-- INICIO FORMULARIO -->
+
+    <h2>Formulario de contacto</h2>
+    <p>╰(*°▽°*)╯ Hola amig@s aventureros del teclado! 🚀</p>
+    <p>🚀 ¿Listo para conectar? Completa el formulario <br> y Únase a la lista de correo o sígueme en las redes sociales </p>
+    <p>¡Hasta pronto en mi bandeja de entrada! <br>
+        ¡Abrazos digitales! 🤗📨</p>
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="asunto">Asunto:</label><br>
+        <input type="text" id="asunto" name="asunto" required><br><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <footer class="footer__container">
+      <img src="./img/8-removebg-preview.png" alt="">
+      <p>&copy; 2024 | Forjado con sueños y tejido con hilos de imaginación por Biviana Agudelo 🦋 (❁´◡`❁)</p>
+      <p>¡ hagamos magia ! ✨🪄🌟</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
