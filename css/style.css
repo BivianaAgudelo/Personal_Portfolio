@@ -115,8 +115,8 @@ body {
 
 .burbuja {
   border-radius: 50%;
-  background: #F3FEFC;
-  opacity: .5;
+  background: #f3fefc;
+  opacity: 0.5;
   position: absolute;
   bottom: -150;
   animation: burbujas 6s linear infinite;
@@ -211,7 +211,7 @@ body {
     transform: translateX(100px);
   }
   50% {
-    opacity: .4;
+    opacity: 0.4;
   }
   100% {
     bottom: 100vh;
@@ -219,64 +219,89 @@ body {
   }
 }
 
-.input-item {
-  background: #fff;
-  color: #333;
-  padding: 14.5px 0px 15px 9px;
-  border-radius: 5px 0px 0px 5px;
+/* FORM */
+
+.input-group {
+  position: relative;
 }
 
-/* inputs form  */
-/* inputs form  */
-input[class="form-input"]{
+.input-item {
+ 
+  padding-left: -50px;
+}
+
+.form-input {
   width: 240px;
-  height: 50px;
-
   margin-top: 2%;
-  padding: 15px;
-  
-  font-size: 16px;
-  font-family: 'Abel', sans-serif;
-  color: #5E6472;
-
+  padding: 10px 15px; /* Reducir el padding superior e inferior */
+  padding-left: 40px; /* Espacio para el icono */
+  font-size: 20px;
+  font-family: "Rancho", sans-serif;
+  color: #5e6472;
   outline: none;
   border: none;
-
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 5px;
   transition: 0.2s linear;
-  
+  position: relative; /* Asegurar que el ícono esté posicionado correctamente */
 }
-input[id="txt-input"] {width: 250px;}
+
+.input-item {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  z-index: 1; /* Asegurar que el ícono esté por encima del input */
+}
+
 /* focus  */
+
+textarea {
+  width: 265px;
+  margin-top: 2%;
+  padding: 10px 15px; /* Reducir el padding superior e inferior */
+  font-size: 20px;
+  font-family: "Rancho", sans-serif;
+  color: #5e6472;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s linear;
+  position: relative; 
+}
+
+textarea:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+} 
+
 input:focus {
   transform: translateX(-2px);
   border-radius: 5px;
-}
-
+} 
 
 button {
   display: inline-block;
   color: #252537;
-
-  width: 280px;
+  font-family: "Rancho", sans-serif;
+  font-size: 20PX;
+  width: 295px;
   height: 50px;
-
+  background: #b8f2e6;
   padding: 0 20px;
-  background: #fff;
-  border-radius: 5px;
   
+  border-radius: 5px;
+
   outline: none;
   border: none;
 
   cursor: pointer;
   text-align: center;
   transition: all 0.2s linear;
-  
+
   margin: 7% auto;
   letter-spacing: 0.05em;
 }
-
-.sign-up {background: #B8F2E6;}
 
 /* buttons hover */
 button:hover {
@@ -290,13 +315,12 @@ button:hover {
 }
 @keyframes ani9 {
   0% {
-      transform: translateY(3px);
+    transform: translateY(3px);
   }
   100% {
-      transform: translateY(5px);
+    transform: translateY(5px);
   }
 }
-
 
 /* FOOTER */
 
@@ -308,7 +332,8 @@ button:hover {
     var(--color-verde-mas-oscuro),
     var(--color-verde-oscuro)
   );
-  padding: 20px;
+  width: 100%;
+  padding: 50px 0px;
   color: #000000;
   font-family: "Butterfly Kids", cursive;
   font-size: 30px;
