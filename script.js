@@ -1,3 +1,5 @@
+// EFECTO DESAPARECER IMAGEN
+
 var imagenes = document.querySelectorAll(".imagen__oruga");
 
 window.addEventListener("scroll", function () {
