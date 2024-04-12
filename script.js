@@ -119,37 +119,68 @@ mensaje.addEventListener("blur", function (event) {
   }
 });
 
-document.ready(function() {
-    document.getElementById("enviarBtn").disabled = true;
+// BTN
+
+const nombreInput = document.getElementById("nombre");
+const emailInput = document.getElementById("email");
+const asuntoInput = document.getElementById("asunto");
+const mensajeInput = document.getElementById("mensaje");
+const enviarBtn = document.getElementById("enviarBtn");
+
+// Función para comprobar si todos los campos están llenos
+function validarCampos() {
+    return nombreInput.value && emailInput.value && asuntoInput.value && mensajeInput.value;
+}
+
+// Agregar un event listener para cada campo que escucha cambios en su valor
+nombreInput.addEventListener("input", function() {
+    enviarBtn.disabled = !validarCampos();
 });
 
+emailInput.addEventListener("input", function() {
+    enviarBtn.disabled = !validarCampos();
+});
 
-// const nombreInput = document.getElementById("nombre");
-// const emailInput = document.getElementById("email");
-// const asuntoInput = document.getElementById("asunto");
-// const mensajeInput = document.getElementById("mensaje");
-// const enviarBtn = document.getElementById("enviarBtn");
+asuntoInput.addEventListener("input", function() {
+    enviarBtn.disabled = !validarCampos();
+});
 
-// // Función para comprobar si todos los campos están llenos
-// function validarCampos() {
-//     return nombreInput.value && emailInput.value && asuntoInput.value && mensajeInput.value;
-// }
+mensajeInput.addEventListener("input", function() {
+    enviarBtn.disabled = !validarCampos();
+});
 
-// // Agregar un event listener para cada campo que escucha cambios en su valor
-// nombreInput.addEventListener("input", function() {
-//     enviarBtn.disabled = !validarCampos();
-// });
+enviarBtn.addEventListener("click", function(event) {
+    // Prevenir el comportamiento predeterminado del botón de enviar
+    event.preventDefault();
+  
+    if (validarCampos()) {
+      modal.style.display = "block";
+    }
+  });
 
-// emailInput.addEventListener("input", function() {
-//     enviarBtn.disabled = !validarCampos();
-// });
+// MODAL
 
-// asuntoInput.addEventListener("input", function() {
-//     enviarBtn.disabled = !validarCampos();
-// });
+// Obtener el modal y el botón para cerrarlo
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
 
-// mensajeInput.addEventListener("input", function() {
-//     enviarBtn.disabled = !validarCampos();
-// });
+// Cuando el usuario haga clic en el botón, mostrar el modal
+enviarBtn.addEventListener("click", function() {
+  if (validarCampos()) {
+    modal.style.display = "block";
+  }
+});
+
+// Cuando el usuario haga clic en la 'x', cerrar el modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic fuera del modal, cerrar el modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 

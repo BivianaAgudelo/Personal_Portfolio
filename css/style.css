@@ -82,7 +82,7 @@ body {
   }
 }
 
-/* INICIO FORMULARIO */
+/* CONTAINER MENSAJES FORMULARIO */
 
 .formulario__container {
   background-image: linear-gradient(
@@ -218,106 +218,6 @@ body {
     opacity: 0;
   }
 }
-
-/* FORM */
-
-.input-group {
-  position: relative;
-}
-
-.input-item {
- 
-  padding-left: -50px;
-}
-
-.form-input {
-  width: 240px;
-  margin-top: 2%;
-  padding: 10px 15px; /* Reducir el padding superior e inferior */
-  padding-left: 40px; /* Espacio para el icono */
-  font-size: 20px;
-  font-family: "Rancho", sans-serif;
-  color: #5e6472;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  transition: 0.2s linear;
-  position: relative; /* Asegurar que el ícono esté posicionado correctamente */
-}
-
-.input-item {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #333;
-  z-index: 1; /* Asegurar que el ícono esté por encima del input */
-}
-
-/* focus  */
-
-textarea {
-  width: 265px;
-  height: 40px;
-  margin-top: 2%;
-  padding: 10px 15px; /* Reducir el padding superior e inferior */
-  font-size: 20px;
-  font-family: "Rancho", sans-serif;
-  color: #5e6472;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  transition: 0.2s linear;
-  position: relative; 
-}
-
-textarea:focus {
-  transform: translateX(-2px);
-  border-radius: 5px;
-} 
-
-input:focus {
-  transform: translateX(-2px);
-  border-radius: 5px;
-} 
-
-/* button {
-  display: inline-block;
-  color: #252537;
-  font-family: "Rancho", sans-serif;
-  font-size: 20PX;
-  width: 295px;
-  height: 50px;
-  background: #b8f2e6;
-  padding: 0 20px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.2s linear;
-  margin: 7% auto;
-  letter-spacing: 0.05em;
-} */
-
-/* buttons hover */
-/* button:hover {
-  transform: translatey(3px);
-  box-shadow: none;
-} */
-
-/* buttons hover Animation */
-/* button:hover {
-  animation: ani9 0.4s ease-in-out infinite alternate;
-}
-@keyframes ani9 {
-  0% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(5px);
-  }
-}   */
 
 /* FOOTER */
 
