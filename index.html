@@ -1,144 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpg" href="./icon/mujer.png" />
-    <script
-      src="https://kit.fontawesome.com/9c32a25bcb.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Caveat:wght@400..700&family=Just+Another+Hand&family=Marck+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/flexbox.css" />
-    <title>Personal Portfolio</title>
-  </head>
-  <body>
-    <!-- Cabecera -->
-    <header>
-      <nav class="cabecera__container">
-        <h1 class="title">!Portafolio en constante evolución y crecimiento¡</h1>
-        <div class="img__background">
-            <img class="img__central_background" src="./img/soñadora.png" alt="Mujer sentada en un sillón dibujando y pensando sobre sus sueños">
-        </div>
-        <div class="img__div">
-          <img
-            class="imagen__oruga"
-            src="./img/oruga.png"
-            alt="Oruga mirándose al espejo, convertida en mariposa"
-          />
-          <div class="img__text">
-            <h2>¡Hola! Soy Biviana, una soñadora, apasionada por el misterio, optimista por el futuro, el desarrollo web y la tecnología.</h2>
-            <p>&#60p&#62 Sueña en binario, imagina en píxeles, y programa tu propio universo digital &#60/p&#62</p>
-          </div>
-          <div class="icon__group">
-            <a
-              href="https://www.linkedin.com/in/bivianaagudelo/"
-              target="_blank"
-              class="icon_linkedin"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a
-              href="https://github.com/BivianaAgudelo"
-              target="_blank"
-              class="icon_github"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
-        </div>
-        
-      </nav>
-    </header>
-    <aside>
-        
-    </aside>
 
-    <!-- INICIO FORMULARIO -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpg" href="./icon/mujer.png" />
+  <script src="https://kit.fontawesome.com/9c32a25bcb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Caveat:wght@400..700&family=Just+Another+Hand&family=Marck+Script&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/flexbox.css" />
+  <link rel="stylesheet" href="./css/form.css" />
+  <title>Personal Portfolio</title>
+</head>
 
-    <div class="formulario__container">
-      <div class="formulario__content">
-        <div class="mensajes__container">
-          <h2>Formulario de contacto</h2>
-          <p>╰(*°▽°*)╯ Hola amig@s aventureros del teclado! 🚀</p>
-          <p>🌈🚀 ¿List@ para conectar? Completa el formulario <br> y Únase a la lista de correo o sígueme en las redes sociales. </p>
-          <p>¡Hasta pronto en mi bandeja de entrada! <br>
-              ¡Abrazos digitales! 🤗📨</p>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <nav class="cabecera__container">
+      <h1 class="title">!Portafolio en constante evolución y crecimiento¡</h1>
+      <div class="img__background">
+        <img class="img__central_background" src="./img/soñadora.png"
+          alt="Mujer sentada en un sillón dibujando y pensando sobre sus sueños">
+      </div>
+      <div class="img__div">
+        <img class="imagen__oruga" src="./img/oruga.png" alt="Oruga mirándose al espejo, convertida en mariposa" />
+        <div class="img__text">
+          <h2>¡Hola! Soy Biviana, una soñadora, apasionada por el misterio, optimista por el futuro, el desarrollo web y
+              la tecnología.</h2>
+          <p>&#60p&#62 Sueña en binario, imagina en píxeles, y programa tu propio universo digital &#60/p&#62</p>
         </div>
-        
-        <form>
-          <div class="container-form">
-              <div class="input-group">
-                  <span class="input-item">
-                    <i class="fa-solid fa-user-secret"></i>
-                  </span>
-                  <input class="form-input" type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" maxlength="50"><br><br>
-              </div>
-          
-              <div class="input-group">
-                <span class="input-item">
-                  <i class="fa-solid fa-envelope"></i>
-                </span>
-                  <input class="form-input" type="email" id="email" name="email" required placeholder="@Correo electrónico"><br><br>
-              </div>
-          
-              <div class="input-group">
-                <span class="input-item">
-                  <i class="fa-solid fa-paperclip"></i>
-                </span>
-                  <input class="form-input" type="text" id="asunto" name="asunto" required placeholder="Asunto"><br><br>
-              </div>
-          
-              <div class="input-group">
-                  <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingresa tu mensaje"></textarea><br><br>
-              </div>
-          
-              <button class="btn submits sign-up">
-                Enviar
-                <!--         Sign Up font icon -->
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
+        <div class="icon__group">
+          <a href="https://www.linkedin.com/in/bivianaagudelo/" target="_blank" class="icon_linkedin"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/BivianaAgudelo" target="_blank" class="icon_github"><i
+              class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <aside>
+
+  </aside>
+
+  <!-- INICIO FORMULARIO -->
+
+  <div class="formulario__container">
+    <div class="formulario__content">
+      <div class="mensajes__container">
+        <h2>Formulario de contacto</h2>
+        <p>╰(*°▽°*)╯ Hola amig@s aventureros del teclado! 🚀</p>
+        <p>🌈🚀 ¿List@ para conectar? Completa el formulario <br> y Únase a la lista de correo o sígueme en las redes
+          sociales. </p>
+        <p>¡Hasta pronto en mi bandeja de entrada! <br>
+          ¡Abrazos digitales! 🤗📨</p>
+      </div>
+
+      <form id="miFormulario">
+        <div class="container-form">
+          <div class="input-group">
+            <span class="input-item">
+              <i class="fa-solid fa-user-secret"></i>
+            </span>
+            <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br><br>
+            <span class="error" id="nombreError"></span>
           </div>
+
+          <div class="input-group">
+            <span class="input-item">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input class="form-input" type="email" id="email" name="email"
+              placeholder="@Correo electrónico"><br><br>
+            <span class="error" id="emailError"></span>
+          </div>
+
+          <div class="input-group">
+            <span class="input-item">
+              <i class="fa-solid fa-paperclip"></i>
+            </span>
+            <input class="form-input" type="text" id="asunto" name="asunto" placeholder="Asunto"><br><br>
+            <span class="error" id="asuntoError"></span>
+          </div>
+
+          <div class="input-group">
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingresa tu mensaje"></textarea><br><br>
+            <span class="error" id="mensajeError"></span>
+          </div>
+
+          <button type="submit" class="btn submits sign-up" id="enviarBtn" disabled>
+            Enviar
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
           
+        </div>
+
       </form>
-      </div>
-      <div>
-        <div class="burbujas">
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-          <div class="burbuja"></div>
-        </div>
-      </div>
-      
-      
-      
     </div>
+    <div>
+      <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+      </div>
+    </div>
+  </div>
 
-    
-    
-    
-    
-    <footer class="footer__container">
-      <img src="./img/8-removebg-preview.png" alt="">
-      <p>&copy; 2024 | Forjado con sueños y tejido con hilos de imaginación por Biviana Agudelo 🦋 (❁´◡`❁)</p>
-      <p>¡ hagamos magia ! ✨🪄🌟</p>
-    </footer>
+  <!-- Inicio footer -->
+  <footer class="footer__container">
+    <img src="./img/8-removebg-preview.png" alt="">
+    <p>&copy; 2024 | Forjado con sueños y tejido con hilos de imaginación por Biviana Agudelo 🦋 (❁´◡`❁)</p>
+    <p>¡ hagamos magia ! ✨🪄🌟</p>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-

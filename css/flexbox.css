@@ -37,8 +37,9 @@
 /* FORM */
 
 .input-group {
-  display: flex;
-  align-items: center; /* Alinea verticalmente los íconos y los campos de entrada */
+  /* display: flex;
+  align-items: center; */
+  position: relative;
 }
 
 /* FOOTER */

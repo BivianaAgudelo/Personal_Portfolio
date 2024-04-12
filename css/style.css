@@ -258,6 +258,7 @@ body {
 
 textarea {
   width: 265px;
+  height: 40px;
   margin-top: 2%;
   padding: 10px 15px; /* Reducir el padding superior e inferior */
   font-size: 20px;
@@ -280,7 +281,7 @@ input:focus {
   border-radius: 5px;
 } 
 
-button {
+/* button {
   display: inline-block;
   color: #252537;
   font-family: "Rancho", sans-serif;
@@ -289,28 +290,24 @@ button {
   height: 50px;
   background: #b8f2e6;
   padding: 0 20px;
-  
   border-radius: 5px;
-
   outline: none;
   border: none;
-
   cursor: pointer;
   text-align: center;
   transition: all 0.2s linear;
-
   margin: 7% auto;
   letter-spacing: 0.05em;
-}
+} */
 
 /* buttons hover */
-button:hover {
+/* button:hover {
   transform: translatey(3px);
   box-shadow: none;
-}
+} */
 
 /* buttons hover Animation */
-button:hover {
+/* button:hover {
   animation: ani9 0.4s ease-in-out infinite alternate;
 }
 @keyframes ani9 {
@@ -320,7 +317,7 @@ button:hover {
   100% {
     transform: translateY(5px);
   }
-}
+}   */
 
 /* FOOTER */
 

@@ -1,0 +1,17 @@
+.invalid {
+    border: solid 1px #9C0720;
+    box-shadow: 0 0 10px;
+}
+
+
+
+.error {
+    color: #9C0720; 
+    font-size: 16px;
+    font-family: "Rancho", sans-serif;
+    position: absolute; 
+    top: 80%; 
+    left: 0; 
+    z-index: 1;
+    font-weight: bold;
+  }
