@@ -33,6 +33,8 @@ body {
   background-attachment: fixed;
 }
 
+/* SOBRE MÍ */
+
 .img__div {
   background-color: var(--color-amarillo-claro);
 }
@@ -50,7 +52,7 @@ body {
 .img__text {
   text-align: center;
   font-family: "Rancho", cursive;
-  color: #000000;
+  color: #2B2B2B;
   margin-top: -140px;
   padding-bottom: 5px;
   font-size: 37px;
