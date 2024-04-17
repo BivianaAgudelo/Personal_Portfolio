@@ -16,14 +16,6 @@ body {
 
 /* CABECERA */
 
-.title {
-  color: #000000;
-  background-color: var(--color-amarillo-claro);
-  text-align: center;
-  font-family: "Butterfly Kids", cursive;
-  font-size: 50px;
-}
-
 .img__background {
   background-image: url("../img/fondoPantalla1.jpg");
   height: 900px;

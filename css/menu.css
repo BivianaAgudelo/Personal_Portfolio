@@ -1,0 +1,40 @@
+.container__nav {
+  background-color: #f1f5a8;
+  height: 200px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu__title {
+  color: #000000;
+  text-align: center;
+  font-family: "Butterfly Kids", cursive;
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+
+.container__menu {
+  color: #4b4242;
+  font-family: "Butterfly Kids", cursive;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  text-decoration-line: underline;
+}
+
+.container__menu a {
+    transition: color 0.3s, font-size 0.3s;
+  }
+
+.container__menu a:hover {
+    text-decoration-line: underline; /* Subrayar el enlace al pasar el mouse sobre él */
+    color: #56745D; /* Cambiar el color del texto */
+    font-size: 40px;
+  }
+
