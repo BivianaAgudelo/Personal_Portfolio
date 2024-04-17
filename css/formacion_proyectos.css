@@ -90,8 +90,10 @@
 .img__container__proyectos {
   width: 300px;
   height: 300px;
-  margin-bottom: 10px;
-  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 /* Estilo para la imagen dentro del contenedor */
@@ -99,6 +101,16 @@
   max-width: 100%;
   max-height: 100%;
 } 
+
+.container__img__text {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 100px; /* Margen izquierdo */
+  margin-right: 100px; /* Margen derecho */
+}
 
 /* BOTONES */
 
@@ -114,15 +126,19 @@
 .repo {
   background: none;
   border-radius: 5px;
-  border: 2px solid #b8f2e6;
+  border: 2px solid #56745D;
   font-size: 25px;
   width: 130px;
+  color: #56745D;
+  font-weight: bold;
 }
 
 .demo {
   border-radius: 5px;
   font-size: 25px;
   width: 130px;
+  background-color: #56745D;
+  color: #ffffff;
 }
 
 /* Estilo para la información */
