@@ -1,13 +1,21 @@
 /* Definición de variables de colores */
 :root {
-  --color-verde-claro: #e1f0da; /* Verde claro */
-  --color-verde-pastel: #d4e7c5; /* Verde pastel */
-  --color-verde-mas-oscuro: #bfd8af; /* Verde más oscuro */
-  --color-verde-oscuro: #99bc85; /* Verde oscuro */
-  --color-amarillo-claro: #f1f5a8; /* Amarillo claro */
-  --color-amarillo: #e5e483; /* Amarillo */
-  --color-amarillo-mas-oscuro: #d2d180; /* Amarillo más oscuro */
-  --color-amarillo-oscuro: #b2b377; /* Amarillo oscuro */
+  --color-verde-claro: #e1f0da;
+  /* Verde claro */
+  --color-verde-pastel: #d4e7c5;
+  /* Verde pastel */
+  --color-verde-mas-oscuro: #bfd8af;
+  /* Verde más oscuro */
+  --color-verde-oscuro: #99bc85;
+  /* Verde oscuro */
+  --color-amarillo-claro: #f1f5a8;
+  /* Amarillo claro */
+  --color-amarillo: #e5e483;
+  /* Amarillo */
+  --color-amarillo-mas-oscuro: #d2d180;
+  /* Amarillo más oscuro */
+  --color-amarillo-oscuro: #b2b377;
+  /* Amarillo oscuro */
 }
 
 body {
@@ -19,10 +27,17 @@ body {
 .img__background {
   background-image: url("../img/fondoPantalla1.jpg");
   height: 900px;
-  background-size: 90%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+.img__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
 }
 
 /* SOBRE MÍ */
@@ -37,7 +52,8 @@ body {
   top: -130px;
   margin: 10px auto;
   display: block;
-  opacity: 1; /* Opacidad inicial */
+  opacity: 1;
+  /* Opacidad inicial */
   transition: opacity 1s ease;
 }
 
@@ -60,7 +76,7 @@ body {
   font-weight: normal;
 }
 
- .frase__motivadora{
+.frase__motivadora {
   font-size: 30px;
   font-weight: bold;
 }
@@ -75,26 +91,29 @@ body {
 
 @keyframes brillo {
   0% {
-    opacity: 1; /* inicio del brillo: opacidad completa */
+    opacity: 1;
+    /* inicio del brillo: opacidad completa */
   }
+
   50% {
-    opacity: 0.5; /* mitad del brillo: opacidad reducida */
+    opacity: 0.5;
+    /* mitad del brillo: opacidad reducida */
   }
+
   100% {
-    opacity: 1; /* final del brillo: opacidad completa */
+    opacity: 1;
+    /* final del brillo: opacidad completa */
   }
 }
 
 /* CONTAINER MENSAJES FORMULARIO */
 
 .formulario__container {
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-verde-oscuro),
-    var(--color-verde-mas-oscuro),
-    var(--color-verde-pastel),
-    var(--color-verde-claro)
-  );
+  background-image: linear-gradient(to bottom,
+      var(--color-verde-oscuro),
+      var(--color-verde-mas-oscuro),
+      var(--color-verde-pastel),
+      var(--color-verde-claro));
   height: 80vh;
   width: 100%;
   position: relative;
@@ -210,12 +229,15 @@ body {
     bottom: 0;
     opacity: 0;
   }
+
   30% {
     transform: translateX(100px);
   }
+
   50% {
     opacity: 0.4;
   }
+
   100% {
     bottom: 100vh;
     opacity: 0;
@@ -225,13 +247,21 @@ body {
 /* FOOTER */
 
 .footer__container {
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-verde-claro),
-    var(--color-verde-pastel),
-    var(--color-verde-mas-oscuro),
-    var(--color-verde-oscuro)
-  );
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente */
+  justify-content: space-between;
+  /* Centra horizontalmente */
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__container {
+  background-image: linear-gradient(to bottom,
+      var(--color-verde-claro),
+      var(--color-verde-pastel),
+      var(--color-verde-mas-oscuro),
+      var(--color-verde-oscuro));
   width: 100%;
   padding: 50px 0px;
   color: #000000;
@@ -244,7 +274,7 @@ body {
 
 .footer__container img {
   border-radius: 50%;
-  width: 300px; /* Ancho de la imagen */
+  width: 300px;
   height: auto;
 }
 
@@ -258,11 +288,119 @@ body {
 .manito__inicio:hover {
   animation: ani9 0.4s ease-in-out infinite alternate;
 }
+
 @keyframes ani9 {
   0% {
     transform: translateY(6px);
   }
+
   100% {
     transform: translateY(20px);
   }
 }
+
+
+/* Media query para pantallas pequeñas (celulares) */
+@media only screen and (max-width: 600px) {
+
+  /* HEADER */
+
+  .img__central_background {
+    width: 80%;
+  }
+
+  .imagen__oruga {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+
+  .img__text {
+    font-size: 30px;
+    line-height: 1em;
+    margin-bottom: 30px;
+  }
+
+  .quien__soy {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .frase__motivadora {
+    font-size: 25px;
+  }
+
+  .img__div {
+    padding-left: 10px;
+    /* Margen interno izquierdo */
+    padding-right: 10px;
+    /* Margen interno derecho */
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  .footer__container {
+    line-height: 1.5em;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer__container img {
+    width: 200px;
+    height: auto;
+    margin-top: 40px;
+  }
+}
+
+
+/* Media query para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  /* HEADER */
+
+  .imagen__oruga {
+    width: 50%; 
+    max-width: 300px; 
+    height: auto;
+    margin-bottom: 30px;
+  }
+  
+
+  .img__text {
+    font-size: 30px;
+    line-height: 1em;
+    margin-bottom: 30px;
+  }
+
+  .quien__soy {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+
+  .frase__motivadora {
+    font-size: 25px;
+  }
+
+  .img__div {
+    padding-left: 10px;
+    /* Margen interno izquierdo */
+    padding-right: 10px;
+    /* Margen interno derecho */
+    width: 100%;
+  }
+
+  /* FOOTER */
+
+  .footer__container {
+    line-height: 1em;
+    text-align: center;
+    padding-left: 10px; /* Margen interno izquierdo */
+    padding-right: 10px;
+  }
+}
+
+/* Media query para pantallas grandes (PC) */
+@media only screen and (min-width: 1025px) {}

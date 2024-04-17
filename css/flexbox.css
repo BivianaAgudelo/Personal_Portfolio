@@ -1,21 +1,3 @@
-/* CABECERA */
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  letter-spacing: 0.1em;
-  word-spacing: 0.1em;
-}
-
-.img__background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200vh;
-}
-
 /* FORMULARIO */
 
 .formulario__container {
@@ -42,12 +24,4 @@
   position: relative;
 }
 
-/* FOOTER */
 
-.footer__container {
-  display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: space-between; /* Centra horizontalmente */
-  flex-direction: column;
-  flex-wrap: wrap;
-}
