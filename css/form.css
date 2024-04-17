@@ -12,6 +12,23 @@
   overflow: hidden;
 }
 
+.formulario__container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  flex-direction: column;
+  gap: 200px;
+}
+
+.formulario__content {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  flex-direction: row;
+  gap: 200px;
+}
+
+
 .container-form {
   display: flex;
   flex-direction: column;
