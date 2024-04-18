@@ -367,7 +367,7 @@ button:hover {
 
   .modal-content {
     width: 80%;
-    font-size: 25px;
+    font-size: 23px;
   }
   
 }
@@ -378,8 +378,9 @@ button:hover {
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
 
   .formulario__container {
-    margin-left: 20px;
-    margin-right: 20px;
+    height: auto; /* Ajustar la altura automáticamente para que se ajuste al contenido */
+    padding-top: 20px; /* Añadir espacio adicional en la parte superior */
+    padding-bottom: 20px; /* Añadir espacio adicional en la parte inferior */
   }
 
   .formulario__content {
@@ -390,26 +391,27 @@ button:hover {
 
   .mensajes__container {
     order: -1; /* Cambiar el orden para que aparezca primero */
-    margin-bottom: 50px;
     line-height: 1em;
-    margin-top: 330px;
+    margin-bottom: -100px;
   }
 
+  .miFormulario{
+    margin-top: -70px;
+  }
   .mensajes__container h2 {
     line-height: 3em;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .container-form {
-    width: 100%;
-    max-width: 300px; 
     margin-bottom: 100px;
-    margin-top: -200px;
-    position: relative;
+    margin-top: 20px;
   }
 
   .modal-content {
     width: 80%;
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
