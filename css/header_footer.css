@@ -169,12 +169,14 @@ body {
   /* HEADER */
 
   .img__central_background {
-    width: 80%;
+    width: 70%;
   }
 
   .imagen__oruga {
     width: 60%;
     margin-bottom: 30px;
+    max-width: 200px;
+    height: auto;
   }
 
   .img__text {
@@ -224,9 +226,13 @@ body {
 
   /* HEADER */
 
+  .img__central_background {
+    width: 30%;
+  }
+
   .imagen__oruga {
     width: 50%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     margin-bottom: 30px;
   }
