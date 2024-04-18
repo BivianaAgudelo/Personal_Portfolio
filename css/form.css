@@ -366,10 +366,10 @@ button:hover {
   }
 
   .modal-content {
-    width: 80%;
-    font-size: 20px;
+    width: 90%; /* Ajustar el ancho al 90% del ancho de la pantalla */
+    max-width: 230px; /* Establecer un ancho máximo para evitar que el modal se vuelva demasiado grande */
+    font-size: 25px;
   }
-  
 }
 
 
