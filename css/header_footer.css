@@ -181,24 +181,24 @@ body {
     font-size: 30px;
     line-height: 1em;
     margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .quien__soy {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .frase__motivadora {
     font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  .img__div {
-    padding-left: 10px;
-    /* Margen interno izquierdo */
-    padding-right: 10px;
-    /* Margen interno derecho */
-    width: 100%;
-  }
+
 
   /* FOOTER */
 
